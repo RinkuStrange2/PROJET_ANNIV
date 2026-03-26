@@ -1,0 +1,79 @@
+body {
+    background: 
+    url(../src/images/VHS.png)
+    black;
+    background-repeat: none;
+    color: #00ff9f;
+    font-family: 'VT323', monospace;
+    text-align: center;
+    size: auto;
+
+  }
+   
+  /* effet écran */
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(0,255,159,0.05),
+      rgba(0,255,159,0.05) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  }
+   
+  /* texte VHS */
+  h1 {
+    font-family: 'Rubik Glitch', cursive;
+    color: #00ff9f;
+    text-shadow: 0 0 10px #00ff9f;
+  }
+   
+  /* input */
+  input {
+    background: black;
+    border: 1px solid #00ff9f;
+    color: #00ff9f;
+    padding: 10px;
+    font-family: 'VT323';
+  }
+   
+  /* bouton */
+  button {
+    background: black;
+    border: 1px solid #00ff9f;
+    color: #00ff9f;
+    padding: 10px;
+    cursor: pointer;
+  }
+   
+  button:hover {
+    background: #00ff9f;
+    color: black;
+  }
+  /*.fond-VHS {
+    width: 98vw;
+    height: auto;
+    position: ;
+
+  }*/
+   
+  /* effet glitch texte */
+  .glitch {
+    animation: glitch 0.2s infinite;
+  }
+   
+  @keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+  }
